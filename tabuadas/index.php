@@ -10,6 +10,7 @@
     <ul>
         <li><a href="simples.php">Tabuada Simples de um número</a>
         </li>
+        <li><a href="tabuadacompleta.php">Listagem tabuadas completas 0 até 10</li>
     </ul>
 </body>
 </html>
