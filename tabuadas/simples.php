@@ -16,6 +16,6 @@
             echo "$multiplicador x $operador = ".$multiplicador * $operador."<br>";
         }
     ?>
-    <a href="insdex.php">Voltar</a>
+    <a href="index.php">Voltar</a>
 </body>
 </html>
