@@ -18,6 +18,8 @@
         ?>
         <br>
         <a href="phpinfo.php">Obtenha informações referente ao PHP usando PHPInfo()</a>
+        <br>
+        <a href="olanome.php">Olá Nome</a>
 
     </body>
 </html>
