@@ -15,8 +15,8 @@
             <label for="fnome">Nome: </label>
             <input type="text" size="40" name="fnome" placeholder="Nome completo">
             <br>
-            <label for="fidade">Idade:</label>
-            <input type="number" name="fidade">
+            <label for="fdtnascto">Idade:</label>
+            <input type="date" name="fdtnascto">
             <br>
             <label for="faltura">Altura (m): </label>
             <input type="number" name="faltura" step="0.01" min="0">
@@ -28,10 +28,9 @@
             <button type="reset">Limpar</button>
         </form>
     </main>
-    <footer><p>Exemplo aplicação em HTML + PHP para cálculo do IMC - Índice de Massa Coroporal.</p>
-    <br>
-    <p>Referência: <a href="https://www.calcule.net/saude/calcular-imc-calculo-de-imc-ideal-online-aprenda-fazer-a-formula-para-calcular/" target="_blank">Calcule.net</a>.</p>
-    </footer>
+    <?php
+       include("rodape.php");
+    ?>
     
 </body>
 </html>
