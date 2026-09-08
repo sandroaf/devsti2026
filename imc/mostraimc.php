@@ -7,7 +7,7 @@
     <title>Cálculo IMC - Resultado</title>
 
     <?php
-        require_once("funcoes.php"); 
+        require_once("../funcoes.php"); 
     ?>
 </head>
 <body>

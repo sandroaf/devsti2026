@@ -37,3 +37,31 @@ function imc($peso, $altura)
     }
     return $retorno;
 }
+
+function analisepressao($pad,$pas) {
+    /*
+    Pressão Arterial Diastólica (PAD)	Pressão Arterial Sistólica (PAS)	Classificação
+    Menor que 85 mmHg	Menor que 130 mmHg	Normal
+    Entre 85 e 89 mmHg	Entre 130 e 139 mmHg	Normal limítrofe
+    Entre 90 e 99 mmHg	Entre 140 e 159 mmHg	Hipertensão leve (estágio 1)
+    Entre 100 e 109 mmHg	Entre 160 e 179 mmHg	Hipertensão moderada (estágio 2)
+    Maior ou igual a 110 mmHg	Maior ou igual a 180 mmHg	Hipertensão grave (estágio 3)
+    Menor que 90 mmHg	Maior ou igual a 140 mmHg	Hipertensão sistólica isolada
+    */
+    if ($pad < 85 && $pas <130) {
+        $analise = "normal";
+    } elseif (($pad >= 85 && $pad < 90) && ($pas >= 130 && $pas < 140)) {
+        $analise = "normal limítrofe";
+    } elseif (($pad >= 90 && $pad < 100) && ($pas >= 140 && $pas < 160)) {
+        $analise = "hipertensão leve (estágio 1)";
+    } elseif (($pad >= 100 && $pad < 110) && ($pas >= 160 && $pas < 180)) {
+        $analise = "hipertensão moderada (estágio 2)";
+    } elseif ($pad >= 100 && $pas >= 180) {
+        $analise = "hipertensão grave (estágio 3)";
+    } elseif ($pad < 90 && $pas >= 140) {
+        $analise = "hipertensao sistólica isolada";
+    } else {
+        $analise = "hipertensao fora dos padrões analisados";
+    }
+    return $analise;
+}
