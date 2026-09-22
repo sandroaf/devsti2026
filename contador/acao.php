@@ -7,7 +7,7 @@
               $_SESSION["Msg"] = "Incrementado Contador";
           } else {
               $_SESSION["contador"]--;
-              $_SESSION["Msg"] = "Decrementador Contador";
+              $_SESSION["Msg"] = "Decrementado Contador";
           }
        }
    } else {
